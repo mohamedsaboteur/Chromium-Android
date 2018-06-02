@@ -1026,4 +1026,11 @@ You must have Bluetooth and Location turned on in order to use the Physical Web.
 <string name="redirect_blocked_short_message">"Redirect blocked."</string>
 <string name="near_oom_intervention_message">"This page uses too much memory, so Chrome paused it."</string>
 <string name="near_oom_intervention_decline">"Resume"</string>
+<string name="nighttime">Nighttime</string>
+<string name="no_image">No Image</string>
+<string name="download_file">Download/File</string>
+<string name="add_bookmarks">Add Bookmarks</string>
+<string name="bookmark_history">Bookmark/History</string>
+<string name="save_page">Save Page</string>
+<string name="dummy">Please fill this page</string>
 </resources>

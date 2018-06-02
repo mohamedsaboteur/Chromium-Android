@@ -559,4 +559,11 @@
     <item type="dimen" name="dialog_fixed_width_minor">100%</item>
     <item type="dimen" name="dialog_fixed_height_major">100%</item>
     <item type="dimen" name="dialog_fixed_height_minor">100%</item>
+
+    <!-- Expandable Bar Related Dimensions-->
+    <dimen name="control_buttons_size">20dp</dimen>
+    <dimen name="outer_margin">32dp</dimen>
+    <dimen name="control_buttons_outer_margin">64dp</dimen>
+    <dimen name="txt_size">12sp</dimen>
+
 </resources>
