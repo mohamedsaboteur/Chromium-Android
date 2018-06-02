@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import org.chromium.chrome.R;
 
+
 /**
  * This class represents the fragment that plays the role of the expandable navigation bar.
  * The fragment pops up from the bottom of the screen when a toggle button -set in the target activity-

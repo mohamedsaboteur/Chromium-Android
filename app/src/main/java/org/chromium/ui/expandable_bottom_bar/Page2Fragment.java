@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import org.chromium.chrome.R;
 
+
 /**
  * This class represents one page in the view pager used in {@link BottomSheetFragment}
  */

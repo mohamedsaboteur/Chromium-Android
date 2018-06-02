@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import org.chromium.chrome.R;
 
+
 /**
  * This class represents one page in the view pager used in {@link BottomSheetFragment}
  */
