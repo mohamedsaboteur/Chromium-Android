@@ -159,6 +159,7 @@ import org.chromium.ui.base.ActivityWindowAndroid;
 import org.chromium.ui.base.DeviceFormFactor;
 import org.chromium.ui.base.PageTransition;
 import org.chromium.ui.base.WindowAndroid;
+import org.chromium.ui.expandable_bottom_bar.BottomSheetFragment;
 import org.chromium.ui.widget.Toast;
 import org.chromium.webapk.lib.client.WebApkNavigationClient;
 import org.chromium.webapk.lib.client.WebApkValidator;
@@ -176,6 +177,42 @@ import javax.annotation.Nullable;
 public abstract class ChromeActivity extends AsyncInitializationActivity
         implements TabCreatorManager, AccessibilityStateChangeListener, PolicyChangeListener,
         ContextualSearchTabPromotionDelegate, SnackbarManageable, SceneChangeObserver {
+
+    /**
+     * This method is triggered when the toggle button is clicked
+     * @param view the clicked view
+     */
+    public void showBottomBar(View view) {
+        //Bottom sheet fragment declaration
+        BottomSheetFragment bottomSheetFragment = new BottomSheetFragment();
+        //Showing the fragment. This method requires two parameters
+        //The first is the Fragment Manager which will handle the transaction and other actions
+        //The second is a tag (name) associated with the target fragment
+        bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
+    }
+
+    /**
+     * This method is triggered when the tab indicator button is clicked
+     * @param view the clicked view
+     */
+    public void tabIndicatorClick(View view) {
+        //TODO Implement This method
+    }
+    /**
+     * This method is triggered when the menu button is clicked
+     * @param view the clicked view
+     */
+    public void menuClick(View view) {
+        //TODO Implement This method
+    }
+    /**
+     * This method is triggered when the forward button is clicked
+     * @param view the clicked view
+     */
+    public void forwardClick(View view) {
+        //TODO Implement This method
+    }
+
     /**
      * Factory which creates the AppMenuHandler.
      */

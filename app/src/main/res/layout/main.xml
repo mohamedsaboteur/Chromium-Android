@@ -111,6 +111,54 @@
             android:layout="@layout/empty_background_view_tablet"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/primary_color_home_bottom_nav"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/bottom_bar_height">
+
+            <Button
+                android:id="@+id/btn_tab_indicator"
+                android:layout_width="@dimen/smaller_bar_btn"
+                android:layout_height="@dimen/smaller_bar_btn"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/bottom_bar_outer_margin"
+                android:onClick="tabIndicatorClick"
+                android:background="@drawable/tab_indicator" />
+
+            <Button
+                android:id="@+id/btn_toggle_bottom_bar"
+                android:layout_width="@dimen/bar_buttons_size"
+                android:layout_height="@dimen/bar_buttons_size"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="showBottomBar"
+                android:background="@drawable/up" />
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="@dimen/smaller_bar_btn"
+                android:layout_height="@dimen/smaller_bar_btn"
+                android:layout_toStartOf="@id/btn_forward"
+                android:layout_marginEnd="25dp"
+                android:layout_centerVertical="true"
+                android:onClick="menuClick"
+                android:background="@drawable/menu_btn" />
+
+            <Button
+                android:id="@+id/btn_forward"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/arrow_right"
+                android:layout_width="@dimen/bar_buttons_size"
+                android:onClick="forwardClick"
+                android:layout_height="@dimen/bar_buttons_size"/>
+
+        </RelativeLayout>
+
+
     </org.chromium.chrome.browser.coordinator.CoordinatorLayoutForPointer>
 
     <!-- This empty view is used as the anchor for custom menu -->
